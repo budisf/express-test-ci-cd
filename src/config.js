@@ -21,5 +21,3 @@ if (process.env.NODE_ENV === 'testaaa') {
     frontendURL: 'https://carpool.riceapps.org',
   };
 }
-
-export const MY_ENV_VAR = process.env.MY_ENV_VAR
