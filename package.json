@@ -1,0 +1,36 @@
+{
+  "repository": "",
+  "name": "carpool-expressjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "start": "node src/server.js"
+  },
+  "author": "Rice Apps",
+  "license": "ISC",
+  "dependencies": {
+    "agenda": "^2.0.2",
+    "ajv": "^6.9.2",
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mocha": "^4.0.1",
+    "moment": "^2.24.0",
+    "mongoose": "^4.13.18",
+    "morgan": "^1.9.1",
+    "nodemailer": "^5.1.1",
+    "request": "^2.87.0",
+    "supertest": "^3.4.2",
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
