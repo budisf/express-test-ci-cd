@@ -223,7 +223,6 @@ router.get('/user/:user', (req, res) => {
 
         Ride.find(query, (err, rides) => {
             //console.log('Rides', rides);
-
             if (err) {
                 return res.status(500); // db error (500 internal server error)
             }
@@ -312,7 +311,6 @@ router.post('/:ride_id/book', (req, res) => {
         console.log('Invalid user_id format');
         return res.status(404).send('Invalid user_id format');
     }
-
     if (!req.body.user_id) {
         console.log('A user id was not provided');
         return res.status(404).send('A user must be provided.');

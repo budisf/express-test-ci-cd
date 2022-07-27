@@ -23,7 +23,6 @@ router.get('/', function (req, res) {
 
     if (ticket) {
         // validate our ticket against the CAS server
-        // serviceURL = localhost:4200
         var url = `${config.CASValidateURL}?ticket=${ticket}&service=${config.thisServiceURL}`;
         request(url, function (err, response, body) {
 
@@ -120,6 +119,7 @@ router.get('/', function (req, res) {
     } else {
         return res.status(400);
     }
+
 });
 
 module.exports = router;
